@@ -3,6 +3,7 @@ package module3;
 public class Dog {
     private String name;
     private int age;
+    private int legs;
 
     public Dog(String name, int age) {
         this.name = name;
