@@ -4,7 +4,8 @@ public class Motorcycle {
     private String model;
     private int wheels;
     private String motor;
-    public int power;/**/
+    public int power;
+
 
     public Motorcycle(int year, String color, String model) {
         this.year = year;
