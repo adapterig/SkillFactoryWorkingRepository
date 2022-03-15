@@ -3,8 +3,9 @@ public class Motorcycle {
     private String color;
     private String model;
     private int wheels;
-    private String motar;
-    public String power;
+    private String motor;
+    public int power;
+
 
     public Motorcycle(int year, String color, String model) {
         this.year = year;
