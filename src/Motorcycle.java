@@ -5,6 +5,7 @@ public class Motorcycle {
     private int wheels;
     private String motar;
     public String power;
+    private String length;
 
     public Motorcycle(int year, String color, String model) {
         this.year = year;
