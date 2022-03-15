@@ -15,7 +15,7 @@ public class ParkingPlace {
         return number;
     }
 
-    public void setLock (boolean isLocked){
+    public void setLock(boolean isLocked) {
         this.isLocked = isLocked;
     }
 
@@ -33,5 +33,9 @@ public class ParkingPlace {
 
     public void setKey(String key) {
         this.key = key;
+    }
+
+    public void setUnlock() {
+        this.isLocked = false;
     }
 }

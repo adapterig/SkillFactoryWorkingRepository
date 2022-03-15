@@ -79,5 +79,9 @@ public class Plane {
     public void fillFuel(){
         this.fillFuel(1000);
     }
+
+    public void setBombs(int bombs) {
+        this.bombs = bombs;
+    }
 }
 
