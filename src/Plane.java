@@ -5,7 +5,7 @@ public class Plane {
     private int bombs;
     private static int counter = 0;
     private int number;
-/*fdkjbidurhg auhpgiuahghairgh*/
+/*fdkjbidurgfkkggiuahghairgh*/
     public Plane(int x, int y, int z, int fuel) {
         this.x = x;
         this.y = y;
