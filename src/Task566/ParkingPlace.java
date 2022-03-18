@@ -1,3 +1,5 @@
+package Task566;
+
 public class ParkingPlace {
     private int number;
     private String ownerName;
@@ -38,4 +40,6 @@ public class ParkingPlace {
     public void setUnlock() {
         this.isLocked = false;
     }
+
+
 }
