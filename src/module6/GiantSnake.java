@@ -1,11 +1,11 @@
 package module6;
 
-public class Zombie extends Monster {
+public class GiantSnake extends Monster {
 
-    public static String scream = "Raaaauuughhhh";
+    public static String scream = "Ssssss";
 
-    public Zombie(String name) {
-        super(name + " the Zombie", 5);
+    public GiantSnake(String name) {
+        super(name + " the GiantSnake", 5);
     }
 
     @Override
@@ -26,8 +26,9 @@ public class Zombie extends Monster {
 
     @Override
     public void attack(){
+        growl(true);
         super.attack();
-        growl();
+        System.out.println("     ...and hid in the grass");
     }
 
 }
