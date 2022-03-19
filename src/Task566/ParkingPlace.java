@@ -17,12 +17,17 @@ public class ParkingPlace {
         return number;
     }
 
-    public String getInfo() {
-        return "№ " + number + " " + (this.isLocked ? "заблокирован" : "") + "\nВладелец " + ownerName + "\nКлюч " + key;
+    public void setLock() {
+        this.isLocked = true;
+        System.out.println("Блокировка для место № " + this.number + " установлена.");
+    }
+    public void setUnlock() {
+        this.isLocked = false;
+        System.out.println("Блокировка для место № " + this.number + " снята");
     }
 
-    public void setLocked(boolean locked) {
-        isLocked = locked;
+    public String getInfo() {
+        return "№ " + number + " " + (this.isLocked ? "заблокирован" : "") + "\nВладелец " + ownerName + "\nКлюч " + key;
     }
 
     public boolean isLocked() {
@@ -30,7 +35,15 @@ public class ParkingPlace {
     }
 
     public void setKey(String key) {
-        this.key = key;
+        if (!this.isLocked) {
+            this.key = key;
+            System.out.println("Ключ изменен.");
+        } else {
+            System.out.println("Замена ключа невозможна, установлена блокировка");
+        }
     }
-}
 
+
+
+
+}
