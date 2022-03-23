@@ -13,6 +13,7 @@ public class PedigreeCat extends Cat {
         return "The cat " + this.getName() + " is very beautiful, although she is now "
                 + this.getAge() + ", she belongs to the breed " + this.getBreed() + ", and her owner "
                 + this.getOwner() + " is very proud of her.";
+
     }
 
     public String getBreed() {

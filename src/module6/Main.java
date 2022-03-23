@@ -20,6 +20,7 @@ to allow monsters to fight
         battle.add(new GiantSnake("Noname"));
 
         battle.start();
+        Object o = 3;
 
 /*
 This fragment of code has to output
