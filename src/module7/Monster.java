@@ -1,6 +1,6 @@
 package module7;
 
-public class Monster {
+abstract public class Monster {
     //Fix this class
     private String name;
     private int force;
@@ -13,7 +13,26 @@ public class Monster {
         System.out.println("Monster " + name + " was created");
     }
 
-    protected int getForce(){
+    abstract public void attack(Monster monster);
+
+    protected boolean damage(int dhp) {
+        this.hp -= dhp;
+        if (this.hp > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isDestroyed() {
+        if (this.hp <= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    protected int getForce() {
         return force;
     }
 

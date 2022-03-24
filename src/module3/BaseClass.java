@@ -4,7 +4,7 @@ package module3;
 public class BaseClass {
     int defaultValue;
     protected int protectedValue;
-}
+
 
     public BaseClass() {
         this.defaultValue = 1;

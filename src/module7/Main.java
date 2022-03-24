@@ -9,7 +9,7 @@ public class Main {
 Make class Monster abstract
 Fix class Zobie and ...
 
-*/
+
 
         Battle battle = new Battle();
         battle.add(new Zombie("Alice"));
