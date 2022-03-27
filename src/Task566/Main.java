@@ -5,7 +5,7 @@ public class Main {
         String[] commands = {"добавитьМесто", "вывестиСписок", "завершитьРаботу", "установитьБлокировку", "снятьБлокировку", "help", "заменитьКлюч", "удалитьМесто"};
         ParkingPlace[] places = new ParkingPlace[Scan.scanInt("Введите количество парковочных мест: ", 1, 100)];
         while (true) {
-            switch (Scan.scanCommand("Введите команду (введите help для вывода списка комманд): ", commands)) {
+            switch (Scan.scanLine("Введите команду (введите help для вывода списка комманд): ", commands)) {
                 case "добавитьМесто":
                     Parking.addPlace(places);
                     break;

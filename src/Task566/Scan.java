@@ -19,7 +19,7 @@ public class Scan {
         return scanInt;
     }
 
-    public static String scanLine(String message, int minLength, int maxLength) {
+    public static String scanLine(String message, int minLength, int maxLength) { // просто сканированеи строки ограниченной длины
         String scanLine;
         while (true) {
             Scanner scanner;
@@ -33,7 +33,7 @@ public class Scan {
         return scanLine;
     }
 
-    public static String scanCommand(String message, String[] commands) {
+    public static String scanLine(String message, String[] commands) { // сканирование строки с распонованием комманды из массива строк
         String scanString;
         while (true) {
             Scanner scanner;
