@@ -1,4 +1,4 @@
-package Task566;
+package task566;
 
 public class ParkingPlace {
     private int number;

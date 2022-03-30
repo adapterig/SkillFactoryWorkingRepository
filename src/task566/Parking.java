@@ -1,4 +1,4 @@
-package Task566;
+package task566;
 
 public class Parking {
     public static void changeKey(ParkingPlace[] places) {

@@ -1,4 +1,4 @@
-package Task566;
+package task566;
 
 import java.util.Locale;
 import java.util.Scanner;
