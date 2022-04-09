@@ -11,7 +11,7 @@ public class InnerClass {
         counter++;
         class Player {
             boolean isPlayable;
-            if(InnerClass.counter >2)
+           // if(InnerClass.counter >2)
 
             {
                 isPlayable = true;
