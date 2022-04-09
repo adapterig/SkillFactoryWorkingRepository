@@ -1,3 +1,5 @@
+package unsorted;
+
 public class Stanok {
     private int oil;
     private boolean isOff;

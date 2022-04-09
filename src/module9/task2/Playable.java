@@ -1,4 +1,4 @@
-package module9;
+package module9.task2;
 
 public interface Playable {
     public String move();

@@ -1,4 +1,4 @@
-package task566;
+package module5.task566;
 
 public class Parking {
     public static void changeKey(ParkingPlace[] places) {

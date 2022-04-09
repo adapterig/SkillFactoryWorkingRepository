@@ -1,3 +1,5 @@
+package unsorted;
+
 class Rect {
     private int s;
     int w, h;

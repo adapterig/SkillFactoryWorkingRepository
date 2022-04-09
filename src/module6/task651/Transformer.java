@@ -1,4 +1,4 @@
-package task651;
+package module6.task651;
 
 public class Transformer extends PowerSupply {
     double inputVoltage;

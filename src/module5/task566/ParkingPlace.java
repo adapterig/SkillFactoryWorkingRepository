@@ -1,4 +1,4 @@
-package task566;
+package module5.task566;
 
 public class ParkingPlace {
     private int number;

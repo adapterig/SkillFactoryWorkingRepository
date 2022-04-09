@@ -1,4 +1,4 @@
-package task651;
+package module6.task651;
 
 public class Main {
     public static void main(String[] args) {
