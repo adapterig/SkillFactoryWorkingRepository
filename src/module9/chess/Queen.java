@@ -7,7 +7,7 @@ public class Queen extends ChessPiece {
 
     @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
-        if (this.checkBorders(line, column, toLine, toColumn)) {
+        if (this.checkMove(line, column, toLine, toColumn, chessBoard)) {
             if (Math.abs(line - toLine) == Math.abs(column - toColumn) ||
                     line == toLine && column != toColumn || column == toColumn && line != toLine) {
                 return true;

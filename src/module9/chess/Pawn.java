@@ -8,7 +8,7 @@ public class Pawn extends ChessPiece {
 
     @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
-        if (this.checkBorders(line, column, toLine, toColumn)) {
+        if (this.checkMove(line, column, toLine, toColumn, chessBoard)) {
             if (getColor().equals("White")) {
                 if (line == 1 && column == toColumn && (toLine - line) == 1 || (toLine - line) == 2) {
                     return true;
