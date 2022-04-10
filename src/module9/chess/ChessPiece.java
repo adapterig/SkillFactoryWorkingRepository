@@ -14,10 +14,10 @@ public abstract class ChessPiece {
     }
 
     static boolean checkMove(int line, int column, int toLine, int toColumn, ChessBoard board) {
-        if (toLine >= 0 && toLine <= 7 && toColumn >= 0 && toColumn <= 7) {
-            if (line == toLine && column == toColumn) {
+        if (toLine >= 0 && toLine <= 7 && toColumn >= 0 && toColumn <= 7) { //проверка вхождения в границы поля
+            if (line == toLine && column == toColumn) { // проверка наличия передвижения фигуры
                 return false;
-            } else if (board.board[toLine][toColumn] != null &&
+            } else if (board.board[toLine][toColumn] != null && // проверка наличия в точке назначения фигуры того же цвета
                     board.board[line][column].getColor().equals(board.board[toLine][toColumn].getColor())) {
                 return false;
             } else {
