@@ -8,11 +8,11 @@ public class Horse extends ChessPiece {
 
     @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
-        if (this.checkMove(line, column, toLine, toColumn, chessBoard)) {
+        if (checkMove(line, column, toLine, toColumn, chessBoard)) {
             if (Math.abs(line - toLine) == 1 && Math.abs(column - toColumn) == 2 ||
                     Math.abs(line - toLine) == 2 && Math.abs(column - toColumn) == 1) {
                 return true;
-            }
+            } else System.out.println("Конь так не ходит");
 
         }
         return false;
