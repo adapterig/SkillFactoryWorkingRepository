@@ -23,7 +23,18 @@ public class ChessBoard {
                         board[startLine][startColumn].getSymbol().equals("R")) {
                     board[startLine][startColumn].check = false;
                 }
-
+                //проверяем не будет ли после хода король ходящего игрока под атакой,
+                // если под атакой, то не даем сходить таким образом
+                if (King.findAndCheckKingIsUnderAttack(this, startLine, startColumn, endLine, endColumn, this.nowPlayerColor())) {
+                    System.out.println("Недопустимый ход, так как Ваш король будет под атакой");
+                    return false;
+                }
+                //проверяем будет ли король соперника ходящего игрока под атакой,
+                // если будет будет под атакой, то объявляем шах
+                if (King.findAndCheckKingIsUnderAttack(this, startLine, startColumn, endLine, endColumn,
+                        this.nowPlayerColor().equals("White") ? "Black" : "White")) {
+                    System.out.println(this.nowPlayerColor().equals("White") ? "Black" : "White" + " King is under attack");
+                }
                 board[endLine][endColumn] = board[startLine][startColumn]; // if piece can move, we moved a piece
                 board[startLine][startColumn] = null; // set null to previous cell
                 this.nowPlayer = this.nowPlayerColor().equals("White") ? "Black" : "White";

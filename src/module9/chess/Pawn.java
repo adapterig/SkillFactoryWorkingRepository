@@ -30,7 +30,7 @@ public class Pawn extends ChessPiece {
                     return true;
                 }
             }
-            System.out.println("Пешка так не ходит / не рубит");
+
         }
 
         return false;

@@ -12,7 +12,7 @@ public class Horse extends ChessPiece {
             if (Math.abs(line - toLine) == 1 && Math.abs(column - toColumn) == 2 ||
                     Math.abs(line - toLine) == 2 && Math.abs(column - toColumn) == 1) {
                 return true;
-            } else System.out.println("Конь так не ходит");
+            }// else  System.out.println("Конь так не ходит");
 
         }
         return false;
