@@ -19,15 +19,16 @@ public class ChessBoard {
 
             if (board[startLine][startColumn].canMoveToPosition(this, startLine, startColumn, endLine, endColumn)) {
 
-                if (board[startLine][startColumn].getSymbol().equals("K") ||  // check position for castling
-                        board[startLine][startColumn].getSymbol().equals("R")) {
-                    board[startLine][startColumn].check = false;
-                }
+
                 //проверяем не будет ли после хода король ходящего игрока под атакой,
                 // если под атакой, то не даем сходить таким образом
                 if (King.findAndCheckKingIsUnderAttack(this, startLine, startColumn, endLine, endColumn, this.nowPlayerColor())) {
                     System.out.println("Недопустимый ход, так как Ваш король будет под атакой");
                     return false;
+                }
+                if (board[startLine][startColumn].getSymbol().equals("K") ||  // check position for castling
+                        board[startLine][startColumn].getSymbol().equals("R")) {
+                    board[startLine][startColumn].check = false;
                 }
                 //проверяем будет ли король соперника ходящего игрока под атакой,
                 // если будет будет под атакой, то объявляем шах

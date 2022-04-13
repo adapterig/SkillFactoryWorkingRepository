@@ -25,7 +25,7 @@ public class King extends ChessPiece {
     }
 
     public static boolean findAndCheckKingIsUnderAttack(ChessBoard board, int line, int column, int toLine, int toColumn, String currentColor) {
-        //создаем копию доски с фигурами и проверяем не оказался ли король под атакой
+        //создаем копию доски с фигурами, делаем ход и проверяем не оказался ли король под атакой
         ChessBoard tempBoard = new ChessBoard(currentColor);
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
