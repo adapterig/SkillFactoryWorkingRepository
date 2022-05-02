@@ -1,9 +1,7 @@
 package module10.addtask6;
 
-import javax.swing.*;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Solution {
     public static void solution() throws IOException {
@@ -26,12 +24,14 @@ public class Solution {
                 text.append(s).append("\n");
             }
         }
-        System.out.println(text);
+        text.deleteCharAt(text.length());
+        //System.out.println(text);
         FileWriter writer = new FileWriter("src/module10/addtask6/output.txt");
         writer.write(text.toString());
         writer.close();
     }
 }
+
 
 
 
