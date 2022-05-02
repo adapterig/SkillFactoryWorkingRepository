@@ -17,7 +17,7 @@ public class Solution {
         text.append(fromYear).append(";").append(toYear).append("\n");
         for (int i = 1; i < Strings.size(); i++) {
             for (String s:Strings.get(i)) {
-                System.out.print(s);s.trim()
+                System.out.print(s);s.trim();
             }
 
             if (Strings.get(i)[1].equals(district)) {
