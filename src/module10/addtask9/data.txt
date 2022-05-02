@@ -1,0 +1,3 @@
+Part;2018;2020
+Belgorod region;25.9;39.0
+Bryansk region;21.4;24.0
