@@ -7,7 +7,7 @@ public class Test {
     public static void main(String[] args) {
         try {
             readFromFile();
-        } catch (IOException | FileNotFoundException e) {
+        } catch (IOException /*| FileNotFoundException*/ e) {
             e.printStackTrace();
         }
         System.out.print("Done");
