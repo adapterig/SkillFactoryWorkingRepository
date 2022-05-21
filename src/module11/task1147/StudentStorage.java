@@ -1,3 +1,5 @@
+package module11.task1147;
+
 import java.util.HashMap;
 
 public class StudentStorage {
