@@ -7,7 +7,7 @@ class Pizzeria {
     LinkedBlockingQueue<Order> orders = new LinkedBlockingQueue<>(2);
 
     void order(String pizzaName) throws InterruptedException {
-        if (orders.offer(new Order(pizzaName, System.currentTimeMillis()), 250, TimeUnit.MILLISECONDS)) {
+        if (orders.offer(new Order(pizzaName), 250, TimeUnit.MILLISECONDS)) {
             System.out.println(pizzaName + "is delivered");
         } else {
             System.out.println(pizzaName + "is NOT delivered");
@@ -16,11 +16,10 @@ class Pizzeria {
 
     class Order extends Thread {
         String pizzaName;
-        long orderTime;
 
-        public Order(String pizzaName, long orderTime) {
+
+        public Order(String pizzaName) {
             this.pizzaName = pizzaName;
-            this.orderTime = orderTime;
             this.start();
         }
 
